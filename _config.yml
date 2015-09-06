@@ -1,0 +1,14 @@
+# Site settings
+title: Lidia Krus
+emailTest: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Lidia Krus's personal homepage. 
+  aka site description...
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+footer_title: Meta info
+footer_subtitle: (c) Lidia 2015
+github_username:  lidiakrus
+
+# Build settings
+markdown: kramdown
