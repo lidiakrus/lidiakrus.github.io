@@ -1,0 +1,71 @@
+---
+layout: post
+title:  "Hello World"
+date:   2015-09-05 13:29:24
+categories: blog
+---
+
+<article>
+  	<p>>> This is a place for testing. <br />
+  	So why not put here a canvas I once created.</p>
+    <!-- Lidias Hello World Canvas -->
+	<canvas id="lidiasHelloWorldCanvas" width="200" height="100" style="border:1px solid #000000;">
+		Your browser does not support the HTML5 canvas tag.
+	</canvas>
+</article>
+
+<script>
+
+// MyCanvas -----------------------------------------
+
+var c = document.getElementById("lidiasHelloWorldCanvas");
+var ctx = c.getContext("2d");
+
+ctx.fillStyle = "orange";
+ctx.fillRect(0,0,200,100);
+
+// Radial gradient
+var lgrd = ctx.createRadialGradient(100,50,3,100,50,35);
+lgrd.addColorStop(0,"green");
+lgrd.addColorStop(1,"blue");
+
+// The circle
+ctx.beginPath();
+ctx.arc(100,50,25,0,2*Math.PI);
+ctx.fillStyle = lgrd;
+ctx.closePath();
+ctx.fill();
+ctx.stroke();
+
+// Linear gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"blue");
+grd.addColorStop(0.2,"green");
+grd.addColorStop(0.4,"blue");
+grd.addColorStop(0.6,"green");
+grd.addColorStop(0.8,"blue");
+grd.addColorStop(1,"green");
+
+// The triangular corners
+ctx.beginPath();
+ctx.moveTo(0,40);
+ctx.lineTo(80,100);
+ctx.lineTo(0,100);
+ctx.closePath();
+ctx.fillStyle = grd;
+ctx.fill();
+
+ctx.beginPath();
+ctx.moveTo(120,0);
+ctx.lineTo(200,60);
+ctx.lineTo(200,0);
+ctx.closePath();
+ctx.fill();
+
+// The text
+ctx.font = "29px Arial";
+ctx.strokeStyle = grd;
+ctx.strokeText("Hello",10,30);
+ctx.fillText("World",115,95);
+
+</script>
