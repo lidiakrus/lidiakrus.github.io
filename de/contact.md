@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Contact
-lang: en
+title: Kontakt
+lang: de
 refer: contact
-permalink: /contact/
+permalink: /de/contact/
 ---
 
 You can email me at: blaba

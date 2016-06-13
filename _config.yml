@@ -6,9 +6,25 @@ description: > # this means to ignore newlines until "baseurl:"
 credits: Powered by jekyll
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-footer_title: Meta info
-footer_subtitle: (c) Lidia 2015
+footer_title: Meta
+footer_subtitle: (c) Lidia 2015-16
 github_username:  lidiakrus
 
 # Build settings
 markdown: kramdown
+
+t:
+  en:
+    about:
+      name: "About"
+      url: "/about/"
+    contact:
+      name: "Contact"
+      url: "/contact/"
+  de:
+    about:
+      name: "Info"
+      url: "/de/about/"
+    contact:
+      name: "Kontakt"
+      url: "/de/contact/"
