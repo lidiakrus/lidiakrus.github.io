@@ -24,7 +24,7 @@ Push to Github
 
 ```sh
 $ git status	# just for yourself to get an overview
-$ git add -all 
+$ git add --all 
 $ git commit -m "initial commit"
 $ git push -u origin master
 ```
