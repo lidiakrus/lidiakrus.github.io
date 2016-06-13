@@ -8,11 +8,14 @@ lang: en
 
 Merge PDFs
 
-`$ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=finished.pdf file1.pdf`
+* `$ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=finished.pdf file1.pdf`
 
-PNG to JPG
+PNG to JPG with OS X Preview
 
-`$ sips -s format jpeg flag.png --out flag.jpg /Users/.../flag.png /Users/.../flag.jpg` 
+* Preview > File > Save As (or File > Export) > Select format ...
+
+
+
 
 
 
