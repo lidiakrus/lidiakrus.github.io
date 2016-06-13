@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "#cheatsheet tech mix"
-date:   2016-06-13 16:34:26
+date:   2016-06-13 10:34:26
 categories: blog
 lang: en
 ---
