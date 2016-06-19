@@ -4,6 +4,8 @@ title:  "#cheatsheet tech mix"
 date:   2016-06-13 10:34:26
 categories: blog
 lang: en
+refer: cstechmix
+permalink: /cheatsheet-tech-mix/
 ---
 
 Merge PDFs

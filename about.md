@@ -6,4 +6,4 @@ refer: about
 permalink: /about/
 ---
 
-Studied computer science (B.Sc.) at FU Berlin.
+I am Lidia, happily coding from Berlin. 

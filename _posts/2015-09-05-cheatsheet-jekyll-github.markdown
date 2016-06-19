@@ -4,6 +4,8 @@ title:  "#cheatsheet Github + Jekyll"
 date:   2015-09-05 13:46:24
 categories: blog
 lang: en
+refer: csgithubjekyll
+permalink: /cheatsheet-github-jekyll/
 ---
 
 Serve Jekyll site locally the same way as on Github Pages

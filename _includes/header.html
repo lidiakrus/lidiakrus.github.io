@@ -14,12 +14,13 @@
       </a>
 
       <div class="trigger">
+     
         {% assign pages=site.pages | where:"lang", page.lang %}
-		    {% for page in pages %}
+		{% for page in pages %}
           {% if page.title %}
             <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
-    	  {% endfor %}
+    	{% endfor %}
 <!--
     	  {% for menu in site.t[page.lang] %}
     		<a class="page-link" href="{{ menu[1].url }}">{{ menu[1].name }}</a>
@@ -34,13 +35,20 @@
           		</span>
   			</button>
   			<div class="dropdown-content">
-
+				<!-- For the currently selected page, if it has the version in another language, provide link to it in the language dropdown -->
     			{% assign pages=site.pages | where:"refer", page.refer | sort: 'lang' %}
       			{% for page in pages %}
-                {% if page.lang %}
-                  <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
-                {% endif %}
+                	{% if page.lang %}
+                  		<a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+                	{% endif %}
       			{% endfor %}
+      			
+      			{% assign posts=site.posts | where:"refer", page.refer | sort: 'lang' %}
+				{% for post in posts %}
+					{% if page.lang %}
+                  		<a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+                	{% endif %}
+				{% endfor %}
   			</div>
 		  </div>
 
